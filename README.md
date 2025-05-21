@@ -46,7 +46,7 @@ The final dataset structure should look like:
 /path/to/ImageNet100/
 ├── train/
 ├── val/
-└── train\_mask/
+└── train_mask/
 ```
 Each mask file should correspond to an image in the `train/` directory using the same filename (e.g., `n01440764_123.JPEG` ↔ `n01440764_123.pth`).
 
