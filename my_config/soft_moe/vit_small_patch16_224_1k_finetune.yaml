@@ -1,0 +1,17 @@
+DATA:
+  DATASET: sketch
+  IMG_SIZE: 224
+MODEL:
+  TYPE: soft_moe_32
+  NAME: soft_moe_32_imagenet_8_layers_last_2_advanced_100epoch_advanced_finetune_test1
+  DROP_PATH_RATE: 0.2
+TEST:
+  SHUFFLE: False
+TRAIN:
+  EPOCHS: 100
+  WARMUP_EPOCHS: 30
+  WEIGHT_DECAY: 0.01
+  BASE_LR: 2.5e-5 # 1.25e-4 # 4096 batch-size
+  WARMUP_LR: 5.0e-7 # 5.0e-7  # 1.25e-7
+  MIN_LR: 1.0e-6
+  CLIP_GRAD: 1.0

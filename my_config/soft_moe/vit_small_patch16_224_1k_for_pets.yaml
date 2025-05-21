@@ -1,0 +1,17 @@
+DATA:
+  DATASET: stanford_cars
+  IMG_SIZE: 224
+MODEL:
+  TYPE: soft_moe_32
+  NAME: soft_moe_32_imagenet_8_layers_last_2_original_100epoch_random_test1
+  DROP_PATH_RATE: 0.2
+TEST:
+  SHUFFLE: False
+TRAIN:
+  EPOCHS: 5000
+  WARMUP_EPOCHS: 1500
+  WEIGHT_DECAY: 0.05
+  BASE_LR: 5.0e-4 # 1.25e-4 # 4096 batch-size
+  WARMUP_LR: 5.0e-7 # 5.0e-7  # 1.25e-7
+  MIN_LR: 5.0e-6
+  CLIP_GRAD: 5.0

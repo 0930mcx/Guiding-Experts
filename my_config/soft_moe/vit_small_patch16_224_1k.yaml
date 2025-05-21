@@ -1,0 +1,17 @@
+DATA:
+  DATASET: imagenet-100
+  IMG_SIZE: 224
+MODEL:
+  TYPE: soft_moe_32
+  NAME: test_code
+  DROP_PATH_RATE: 0.2
+TEST:
+  SHUFFLE: False
+TRAIN:
+  EPOCHS: 100
+  WARMUP_EPOCHS: 30
+  WEIGHT_DECAY: 0.05
+  BASE_LR: 5.0e-4 # 1.25e-4 # 4096 batch-size
+  WARMUP_LR: 5.0e-7 # 5.0e-7  # 1.25e-7
+  MIN_LR: 5.0e-6
+  CLIP_GRAD: 5.0
