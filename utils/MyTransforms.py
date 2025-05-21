@@ -3,10 +3,10 @@ from timm.data import str_to_pil_interp
 
 from torchvision.transforms import transforms
 
-from my_transforms_utils.RandomAugment import AugmentOp, rand_augment_transform
-from my_transforms_utils.RandomErasing import RandomErasing
-from my_transforms_utils.RandomFlip import RandomHorizontalFlip, RandomVerticalFlip
-from my_transforms_utils.RandomResizedCropAndInterolation import RandomResizedCropAndInterpolation
+from RandomAugment import AugmentOp, rand_augment_transform
+from RandomErasing import RandomErasing
+from RandomFlip import RandomHorizontalFlip, RandomVerticalFlip
+from RandomResizedCropAndInterolation import RandomResizedCropAndInterpolation
 IMAGENET_DEFAULT_MEAN = (0.485, 0.456, 0.406)
 IMAGENET_DEFAULT_STD = (0.229, 0.224, 0.225)
 

@@ -10,7 +10,6 @@ import torch
 import numpy as np
 import torch.distributed as dist
 from PIL import Image
-from sympy.core.random import shuffle
 from timm.data.auto_augment import augment_and_mix_transform, rand_augment_transform
 from timm.data.random_erasing import RandomErasing
 from timm.data.transforms_factory import transforms_noaug_train, transforms_imagenet_eval
@@ -20,7 +19,7 @@ from timm.data.constants import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
 from timm.data import Mixup, auto_augment_transform
 
 
-from MyTransforms import CustomDualTransform
+from utils.MyTransforms import CustomDualTransform
 
 
 from .cached_image_folder import CachedImageFolder
