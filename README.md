@@ -4,7 +4,7 @@ This repository contains the official implementation of the paper:
 
 **Guiding the Experts: Semantic Priors for Efficient and Focused MoE Routing**
 
-by Chengxi Min, Wei Wang, Yahui Liu, YeWeixin, Enver Sangineto, V. W., Yao Zhao.  
+by Chengxi Min, Wei Wang, Yahui Liu, Weixin Ye, Enver Sangineto, Qi Wang, Yao Zhao.  
 
 ## 🖼️ Overview
 
@@ -70,6 +70,7 @@ This project is built upon the following open-source repositories:
 
 - [Swin-Transformer](https://github.com/microsoft/Swin-Transformer): Parts of the training pipeline are adapted from this project.
 - [soft-mixture-of-experts](https://github.com/fkodom/soft-mixture-of-experts): The implemention of Soft MoE are borrowed from this project.
+- [lang-segment-anything](https://github.com/luca-medeiros/lang-segment-anything): The pipline of masks generation are based on this project.
 
 ## 📬 Contact
 
